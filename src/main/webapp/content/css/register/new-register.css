@@ -1,0 +1,254 @@
+/*new-register.css*/
+/*#ff9b00橙色*/
+/*csgo登录弹窗 2017.10.19*/
+
+/*x*/
+.register-close {
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.register-dialog.small-dialog {
+    width: 420px;
+    margin: 70px auto 0;
+    /*margin: -100px auto 0;*/
+    overflow: hidden;
+}
+
+.small-dialog .modal-dialog {
+    width: 100%!important;
+    /*margin: 0!important;*/
+    /*padding-top: 233px;*/
+    background-image: url(/content/images/home/signup-bg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    /*transform: scale(0.7,0.7)!important;*/
+    overflow: hidden;
+}
+
+.register-box .modal-body {
+    padding: 60px 64px 0;
+}
+
+.modal-content {
+    background-color: transparent;
+}
+
+.small-dialog {
+    padding-top: 0;
+}
+
+
+
+.sign-in-up {
+    padding: 0 15px;
+}
+
+.register-no-info {
+    height: 500px;
+    line-height: 400px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.sign-in-up a {
+    display: block;
+    width: 38px;
+    margin: 0 50px;
+    color: #f5d086;
+    font-size: 18px;
+    /*font-weight: 700;*/
+    /*border-bottom: 4px solid #20294e;*/
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.sign-in-up > a.active {
+    color: #f5d086;
+    border-bottom: 3px solid #8b4134;
+}
+
+.register-text-wrapper {
+    float: left;
+    line-height: 35px;
+    text-align: left;
+    font-size: 15px;
+    color: #f5d086;
+}
+
+.input-wrapper {
+    float: right;
+}
+
+.input-wrapper > input {
+    width: 230px;
+    height: 35px;
+    background-color: rgba(0,0,0,0.1);
+    border: 2px solid #9c7552;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 15px;
+    /*font-weight: 700;*/
+    line-height: 35px;
+}
+.input-wrapper > input:focus{
+    border: 2px solid #da9f6b;
+}
+
+/*input::-webkit-input-placeholder { !* WebKit browsers*!*/
+    /*color:white!important;*/
+    /*font-weight: 500;*/
+/*}*/
+/*input:-moz-placeholder {  !* Mozilla Firefox 4 to 18*!*/
+    /*color:white!important;*/
+    /*font-weight: 500;*/
+/*}*/
+/*input::-moz-placeholder {  !* Mozilla Firefox 19+*!*/
+    /*color:white!important;*/
+    /*font-weight: 500;*/
+/*}*/
+/*input:-ms-input-placeholder { !* Internet Explorer 10+*!*/
+    /*color:white!important;*/
+    /*font-weight: 500;*/
+/*}*/
+
+.register-remember {
+    /*text-align: center;*/
+    font-weight: 700;
+}
+
+.register-remember > label > input {
+    width: 11px;
+    height: 11px;
+    border: 1px solid #7f97b4;
+    box-shadow: none;
+    outline: none;
+    position: relative;
+    top:2px;
+}
+
+.sign-in-inline-block {
+    display: inline-block;
+    line-height: 31px;
+    margin-left: 15px;
+}
+
+.auto-sign {
+    font-size: 12px;
+    color: #cecece;
+}
+
+.forget-password {
+    font-size: 12px;
+    color: #cecece;
+    margin-right: 10px;
+    float: right;
+    line-height: 31px;
+}
+.forget-password:hover{
+    color: #cecece;
+}
+
+.help-block {
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #c4570c;
+    display: inline-block;
+}
+
+.sign-nav h3 {
+    font-weight: 700;
+    color: #20294e;
+}
+
+.sign-nav h3:hover {
+    color: #fff;
+}
+
+.register-submit {
+    padding-bottom: 38px;
+}
+
+.register-submit button {
+    color: #8b4134;
+    width: 100%;
+    height: 30px;
+    border:none;
+    /*background-color: #d4c23a;*/
+    background: url("/content/images/home/signup-button.png");
+    font-size: 15px;
+    margin: 0;
+}
+
+.register-ad {
+    display: block;
+    width: 100%;
+    height: 106px;
+    background-color: white;
+    background-image: url(/content/images/registion/ad1.png);
+}
+
+.get-code-button-wrapper {
+    border-left: none;
+    top:115px;
+    right: 15px;
+}
+
+.register-get-code {
+    width: 85px;
+    height: 35px;
+    background-color: #8b4134!important;
+    font-size: 15px;
+    padding: 0;
+}
+
+.input-valid-wrapper {
+    height: 100%;
+    line-height: 41px;
+    font-size: 17px;
+}
+
+.register-text-warn {
+    height: 40px;
+}
+
+.register-text-warn > div {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 70px;
+}
+
+.register-reset-title {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.register-get-reset-code {
+    right: 103px;
+    top: 241px;
+}
+.input-wrapper input::-webkit-input-placeholder{
+    color:#fff!important;
+}
+.input-wrapper input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#fff!important;
+}
+.input-wrapper input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#fff!important;
+}
+.input-wrapper input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#fff!important;
+}

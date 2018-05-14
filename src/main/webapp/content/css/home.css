@@ -1,0 +1,586 @@
+/*home.css*/
+.index-navbar{
+    background: url("/content/images/home/navbar.png") center center;
+    width: 100%;
+    height: 30px;
+    min-width: 1200px;
+}
+.xiaomi-content{
+    background-color: #101018;
+    min-width: 1200px;
+}
+.xiaomi-home{
+    background: url("/content/images/home/header.jpg") no-repeat center center;
+    height: 720px;
+     min-width: 1200px;
+    background-size: cover;
+    position: relative;
+}
+.signUp{
+    position: relative;
+    top: 60%;
+    left: 45.5%;
+    display: block;
+    text-align: center;
+    background: url("/content/images/home/join.png") no-repeat center center;
+    width: 200px;
+    height: 44px;
+}
+.navbar-collapse span {
+    color: #fff;
+}
+
+/*home-menu*/
+.home-menu-wrap {
+    /*width: 1911px;*/
+    height: 105px;
+    width:100%;
+    z-index: 99;
+    /*background: #000;*/
+    background: url("/content/images/home/home-menu.png");
+    /*position: relative;*/
+    /*top: 50px;*/
+}
+
+.index-home-menu  .home-menu-wrap{
+    background: url("/content/images/home/navbar.png");
+}
+
+.home-menu-wrap .home-menu {
+    width:100%;
+    height: 105px!important;
+    margin: 0 auto;
+    color: #ffffff;
+    position: relative;
+    box-shadow: none;
+    float: left;
+}
+
+
+.home-menu-nav, .home-menu-register {
+    display: inline-block;
+}
+
+.home-top-nav {
+    float: right;
+    margin-left: 15px;
+    box-shadow: none;
+    font-size: 14px;
+    /*background: url("/content/images/home/navbar.png") center center;*/
+}
+
+
+.home-top-nav > li > a {
+    padding: 0!important;
+    color: white;
+}
+
+.home-menu-nav {
+    max-width: 1200px;
+    font-size: 0;
+    height: 105px;
+    display: block;
+    margin: 0 auto;
+}
+.index-home-menu{
+     position: relative;
+     top: -105px;
+}
+.home-menu-nav a {
+    width: 20%;
+    color: white;
+    display: inline-block;
+    padding-bottom: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    line-height: 28px;
+    /*position: relative;*/
+    /*top: 28px;*/
+    height: 105px;
+}
+.home-menu-nav a:hover{
+    background-color: rgba(46,33,93,0.4);
+}
+
+.home-menu-nav a span {
+    font-size: 10px;
+}
+
+.home-menu-nav > .home-menu-line {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    transform: skew(-15deg);
+    padding: 0 7px;
+    vertical-align: top;
+}
+.home-menu-nav div{
+    position: relative;
+    top: 28px;
+}
+
+.home-menu-register {
+    color: #fff;
+    /*width: 80px;*/
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    text-align: left;
+    /*background: url("/content/images/home/signup.png");*/
+}
+
+.home-menu-register span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    transform: skew(-15deg);
+}
+
+.register, .sign-in {
+    display: inline-block;
+    outline: none;
+}
+.register-sign-in{
+    margin: 0 10px;
+    display: inline-block;
+    outline: none;
+}
+/*footer*/
+.footer {
+    background-color:#1f2029;
+    min-width: 1200px;
+}
+
+.footer .container {
+    max-width: 1220px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 200px;
+}
+
+.footer-company-logo {
+    height: 60px;
+}
+
+.footer-game-logo {
+    width: 128px;
+}
+
+.footer-info {
+    /*display: inline-block;*/
+    /*position: relative;*/
+    /*top: -53px;*/
+    line-height: 25px;
+    text-align: center;
+    width: 550px;
+    margin: 0 auto ;
+    height: 210px;
+    padding-top: 80px;
+}
+.footer-info img{
+    float: left;
+    position: relative;
+    top: -3px;
+    height: 55px;
+}
+.footer-info div{
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+    color: #dfdfdf;
+}
+
+.footer-info p, .footer-info a {
+    font-size: 25px;
+    color: #fff;
+}
+
+.footer-info span {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+.index-footer{
+    margin-top: -100px;
+}
+
+    /*新版csgo的首页*/
+.text-linear {
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 255, 255, 1)), to(rgba(163, 168, 185, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-wrap {
+    background-color: #1f2029;
+    min-width: 1200px;
+}
+
+.home-register {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.home-person-register {
+    cursor: pointer;
+    outline: none;
+}
+
+.home-team-register {
+    margin-left: 73px;
+    cursor: pointer;
+    outline: none;
+}
+.navbar-button .icon-bar{
+    background-color: #fff;
+}
+nav{
+    height:0;
+}
+.navbar-wrap{
+    position: relative;
+    /*top: 20px;*/
+    /*z-index: 2;*/
+    max-width: 1200px;
+    margin: 0 auto;
+    /*background: url("/content/images/home/navbar.png") center center;*/
+}
+.navbar-nav{
+    /*width:100%;*/
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+}
+.navbar-nav-left{
+    text-align: left;
+}
+.home-menu-nav-active {
+    /*border-bottom: 4px solid white;*/
+    color: #ffd067!important;
+}
+.home-menu-a-active{
+    background-color: rgba(46,33,93,0.4);
+}
+@media (max-width:768px){
+    .home-menu-wrap .navbar-header{
+        width: 100%;
+        background-color: #000;
+    }
+    .home-menu-register{
+        float: right;
+        /*min-height: 100px;*/
+        margin-left: 25px;
+        margin-top: 0;
+    }
+    .navbar-collapse .navbar-collapse>li{
+        float: none;
+        height: auto;
+        display: inline-block;
+    }
+
+    .dropdown-menu-dashboard{
+        /*position: static;*/
+        /*float: none;*/
+        /*width: auto;*/
+        /*margin-top: 0;*/
+        /*background-color: transparent;*/
+        /*border: 0;*/
+        /*-webkit-box-shadow: none;*/
+        /*box-shadow: none;*/
+        /*padding: 0;*/
+        /*border: none!important;*/
+    }
+    /*.dropdown-menu-dashboard a{*/
+        /*width: 110px!important;*/
+        /*display: inline-block!important;*/
+        /*border:none!important;*/
+        /*padding: 0!important;*/
+    /*}*/
+    .home-menu-nav li{
+        height: 40px;
+        line-height: 40px;
+    }
+    .home-top-nav > li > a {
+        padding: 0!important;
+        color: white;
+    }
+}
+@media (min-width: 768px){
+    .navbar-nav li {
+        float: left;
+    }
+
+    .home-top-nav li{
+        /*float: left;*/
+    }
+    /*.home-top-nav{*/
+        /*float: right;*/
+    /*}*/
+    .home-menu-nav-active {
+        /*border-bottom: 4px solid white;*/
+        color: #ffd067;
+    }
+}
+.xiaomi-articles{
+    background-color: #171821;
+    position: relative;
+    top:-105px;
+    height: 620px;
+    width: 100%;
+}
+.xiaomi-articles-content,.xiaomi-bracket-content,.xiaomi-video-content,.xiaomi-media-content{
+    min-width: 1120px;
+    padding-top: 60px;
+    text-align: center;
+}
+.xiaomi-articles-content>img,.xiaomi-bracket-content>img,.xiaomi-video-content>img,.xiaomi-media-content>img{
+    display: block;
+    margin: 0 auto 60px;
+}
+.xiaomi-articles-content-left,.xiaomi-articles-content-right{
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.xiaomi-articles-content-left{
+    width: 460px;
+    height: 250px;
+    margin: 0 80px;
+}
+.xiaomi-articles-content-left a,.xiaomi-articles-content-right a{
+    width: 460px;
+    height: 250px;
+    display: block;
+}
+.xiaomi-articles-content-right{
+    width: 460px;
+    height: 250px;
+    margin: 0 80px;
+}
+.xiaomi-bracket{
+    background:url("/content/images/home/home-bracket-bg.jpg");
+    background-size: cover;
+    position: relative;
+    top:-105px;
+    height: 1300px;
+    width: 100%;
+    min-width: 1200px;
+}
+.ch-articles-item{
+    width:478px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #000;
+    float: left;
+    text-align: left;
+    /*padding-right: 100px;*/
+    position: relative;
+    word-break: break-all;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.xiaomi-bracket-content-schedule{
+    max-width: 1120px;
+    font-size: 0;
+    margin: 0 auto;
+}
+.xiaomi-bracket-content-schedule .color{
+
+}
+.xiaomi-bracket-content-group {
+
+    /*color:#2d416b;*/
+    font-size:24px;
+    /*background-color:#2d416b;*/
+    background: url("/content/images/home/group.png")!important;
+    width: 560px;
+    height: 80px;
+    opacity:1;
+    background:transparent;
+    /*border:3px solid #2d416b;*/
+    border: none;
+}
+.xiaomi-bracket-content-finals{
+    font-size:24px;
+    /*background: url("/content/images/home/group.png")!important;*/
+    width: 560px;
+    height: 80px;
+    opacity:1;
+    background:transparent;
+    border: none;
+    border-bottom: 4px solid #292a35;
+}
+.xiaomi-bracket-content-one{
+    margin-top:20px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.xiaomi-bracket-content-one-item{
+    color: #a4a4a4;
+    width: 122px;
+    height: 50px;
+    background: transparent;
+    font-size: 20px;
+    margin: 10px;
+    border:none;
+    background: url("/content/images/home/group-button.png");
+}
+.xiaomi-bracket-content-one .active{
+    background: url("/content/images/home/group-button-hover.png");
+    color: #e6b461;
+}
+.home-picture{
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     margin: auto;
+}
+.xiaomi-bracket-content-item-two{
+    margin-top: 20px;
+    border: 6px solid #383b53;
+    height: 770px;
+    width: 1120px;
+    position: relative;
+}
+.xiaomi-bracket-content-item-two p{
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background: transparent;
+    font-size: 20px;
+    margin-top: 320px;
+}
+.xiaomi-video{
+    background-color: #171821;
+    position: relative;
+    top:-105px;
+    height: 500px;
+}
+.xiaomi-video-index-group{
+    width: 1127px;
+    margin: 78px auto 0;
+    font-size: 0;
+}
+.xiaomi-video-index-group .xiaomi-video-index-item-div {
+    float: left;
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 14px;
+}
+.xiaomi-video-index-group .video-item {
+    display: inline-block;
+    width: 262px;
+    height: 170px;
+    border: none;
+    margin-right: 18px;
+    margin-bottom: 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.xiaomi-video-index-group .video-item div {
+    width: 262px;
+    height: 200px;
+}
+.xiaomi-video-index-group .video-item img:nth-child(2) {
+    display: block;
+    position: relative;
+    top: -130px;
+    left: 115px;
+}
+.xiaomi-video-index-group .video-item:hover img:nth-child(2), .xiaomi-video-index-group .video-item img:nth-child(3) {
+    display: none;
+}
+.xiaomi-video-index-group .video-item img:nth-child(2) {
+    display: block;
+    position: relative;
+    top: -130px;
+    left: 115px;
+}
+.xiaomi-video-index-group .video-item:hover img:nth-child(3){
+    display: block;
+    position: relative;
+    top: -150px;
+    left: 100px;
+}
+.xiaomi-video-index-item-div p{
+    color: #fff;
+    width: 262px;
+    height: 50px;
+    line-height: 25px;
+    margin: 0;
+    position: relative;
+    bottom: 5px;
+    text-align: left;
+    padding: 0 5px;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden;
+}
+.xiaomi-video-index-item-div p span {
+    float: right;
+    color: #a2a2a2;
+}
+.xiaomi-media{
+    background:url("/content/images/home/home-bracket-bg.jpg");
+    position: relative;
+    top:-105px;
+    height: 450px;
+}
+.xiaomi-articles-title {
+    width: 1120px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.xiaomi-articles-title a{
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    width: 400px;
+}
+.ch-articles-item:nth-of-type(2n) {
+    float: right;
+}
+.ch-news-item-date{
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.xiaomi-media-content-img{
+    margin: 20px auto 0;
+    text-align: center;
+    padding-top: 30px;
+}
+.xiaomi-media-content-img img{
+    width:160px;
+}
+.xiaomi-media-content-img img:first-child{
+    margin-right: 40px;
+}
+@media screen and (max-width: 768px)  {
+    .xiaomi-articles-content-left,.xiaomi-articles-content-right{
+        width: 45%;
+        margin: 0 0 20px 0;
+        float: left;
+    }
+    .signUp{
+        position: relative;
+        top: 60%;
+        left: 43.5%;
+    }
+    .xiaomi-articles-content-right{
+        /*margin-right: 5%;*/
+    }
+    .xiaomi-articles-content-left{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}

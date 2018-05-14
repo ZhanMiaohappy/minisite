@@ -1,0 +1,35 @@
+<div class="post-wraper">
+    <h1 class="header-title">上传决赛对阵图</h1>
+    <form class="form-inline postArticle-form">
+        <div class="form-group">
+            <h4>请选择上传的全国总决赛图片(1006 * 528)</h4>
+            <div>
+                <h4 class="upload-p">上传缩略图:</h4>
+                <button ng-click="vm.Upload('country')" class="upbtn">上传</button>
+                <img ng-if="vm.status === 'country'" ng-show="vm.video.thumbnailUrl != ''" ng-src="{{vm.video.thumbnailUrl}}">
+                <p ng-if="vm.status === 'country'" >{{vm.thumbnailUploadStatus}}</p>
+            </div>
+            <div>
+                 <span>
+                     <a class="btn orange-button" ng-disabled="vm.status !== 'country'" ng-click="vm.submit('country')">提交</a>
+                 </span>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <h4>请选择上传的全球总决赛图片(1006 * 528)</h4>
+            <div>
+                <h4 class="upload-p">上传缩略图:</h4>
+                <button ng-click="vm.Upload('global')" class="upbtn">上传</button>
+                <img ng-if="vm.status === 'global'" ng-show="vm.video.thumbnailUrl != ''" ng-src="{{vm.video.thumbnailUrl}}">
+                <p ng-if="vm.status === 'global'"  >{{vm.thumbnailUploadStatus}}</p>
+            </div>
+            <div>
+                 <span>
+                     <a class="btn orange-button" ng-disabled="vm.status !== 'global'" ng-click="vm.submit('global')">提交</a>
+                 </span>
+            </div>
+        </div>
+    </form>
+</div>
+

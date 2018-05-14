@@ -1,0 +1,284 @@
+.csgo-rule{
+    background: url('/content/images/rule/rule_bg.png') no-repeat;
+    background-position-x: center;
+    /*background-size: 100% 100%;*/
+    min-height: 800px;
+    padding-bottom: 10px;
+    /*overflow: hidden;*/
+    /*margin-top:-62px;*/
+    /*padding: 230px 0;*/
+}
+.real-rule-content{
+    max-width: 1120px;
+    margin: 0 auto;
+    /* background-color: #ffffff; */
+    padding-top: 30px;
+    padding-left: 58px;
+    padding-right: 58px;
+    float: none;
+}
+.real-rule-content-title{
+    margin-bottom: 50px;
+}
+.real-rule-content-title i{
+    background: url("/content/images/home/rule-title.png");
+    width: 229px;
+    height: 40px;
+    display: inline-block;
+}
+.team-register-team-text{
+    color: #bfbfcd;
+    font-size: 16px;
+    padding-bottom: 200px;
+    margin-bottom: 20px;
+}
+.team-register-team-text p{
+    line-height: 35px;
+}
+.team-register-team-text .team-register-p{
+    line-height: 30px;
+}
+.team-register-team-title-margin{
+    margin-top: 90px;
+    margin-bottom: 25px;
+}
+.team-register-img{
+    margin: 90px auto 0;
+    display: block;
+}
+.team-bonus{
+    width: 100%;
+    margin-top: 55px;
+}
+.team-bonus div{
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+}
+@media(min-width: 1500px){
+    .rule-competition,  .rule-rules{
+        /*height: 4000px;*/
+    }
+    .rule-time-header{
+        height: 75px;
+    }
+}
+@media(min-width: 1900px){
+    .rule-competition, .rule-rules{
+        /*height: 5000px;*/
+    }
+}
+.rule-time-header{
+    width: 50%;
+    height: 70px;
+    /*background: url('/content/images/rule/header.png') no-repeat;*/
+    background-size: 100% 100%;
+    margin: 150px auto 0;
+}
+.rule-time-content{
+    /*background: url('/content/images/rule/game-time.png') no-repeat;*/
+    background-size: 100%;
+    width: 400px;
+    height: 100px;
+    margin: 50px auto;
+}
+.rule-tabs{
+    /*background-color: green;*/
+    text-align: center;
+    padding-top: 70px;
+}
+.rule-tab{
+    width: 246px;
+    height: 96px;
+    text-align: center;
+    /*background-color: red;*/
+    background: linear-gradient(20deg,#465c8a,#3e4d71,#465c8a);
+    /*margin: 0 auto 70px;     #6174ab  #3e4d71*/
+    display: inline-block;
+    line-height: 96px;
+}
+
+.rule-tab span{
+    font-size: 23px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.rule-tab.rule-active{
+    background: #b6ab00;
+}
+
+.personal-game-content,
+.team-game-content,
+.national-game-content,
+.global-game-content{
+    width: 1200px;
+    margin: 0 auto;
+}
+.personal-game-content div,
+.team-game-content div,
+.national-game-content div,
+.global-game-content div{
+    margin: 0 auto;
+}
+.personal-game-content .word,
+.team-game-content .word,
+.national-game-content .word,
+.global-game-content .word{
+    width: 900px;
+}
+.personal-game-content .word .title,
+.team-game-content .word .title,
+.national-game-content .word .title,
+.global-game-content .word .title{
+    font-size: 20px;
+    color: #3d4c71;
+    font-weight: 900;
+    display: block;
+}
+.personal-game-content .word .description, .team-game-content .word .description, .national-game-content .word .description, .global-game-content .word .description{
+    font-size: 16px;
+    display: block;
+    line-height: 30px;
+}
+
+
+
+
+
+.personal-game-content .img1{
+    width: 801px;
+    height: 114px;
+    margin-top: 84px;
+    margin-bottom:55px;
+    background-image: url('/content/images/rule/personal_1.png');
+    background-repeat: no-repeat;
+}
+
+.personal-game-content .img2{
+    width: 888px;
+    height: 276px;
+    margin-top: 65px;
+    margin-bottom: 44px;
+    background-image: url('/content/images/rule/personal_2.png');
+    background-repeat: no-repeat;
+}
+.personal-game-content .img3{
+    width: 911px;
+    height: 434px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    background-image: url('/content/images/rule/personal_3.png');
+    background-repeat: no-repeat;
+}
+.team-game-content .img1{
+    width: 801px;
+    height: 120px;
+    margin-top: 90px;
+    margin-bottom:90px;
+    background-image: url('/content/images/rule/team_1.png');
+    background-repeat: no-repeat;
+}
+.team-game-content .img2{
+    width: 499px;
+    height: 156px;
+    margin-top: 90px;
+    margin-bottom:40px;
+    background-image: url('/content/images/rule/team_2.png');
+    background-repeat: no-repeat;
+}
+.team-game-content .img3{
+    width: 333px;
+    height: 281px;
+    margin-top: 30px;
+    margin-bottom:40px;
+    background-image: url('/content/images/rule/team_3.png');
+    background-repeat: no-repeat;
+}
+.img_arrow{
+    width: 74px;
+    height: 54px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    background-image: url('/content/images/rule/team_4.png');
+    background-repeat: no-repeat;
+}
+.team-game-content .img5{
+    width: 219px;
+    height: 292px;
+    margin-top: 30px;
+    /*margin-bottom:40px;*/
+    background-image: url('/content/images/rule/team_5.png');
+    background-repeat: no-repeat;
+}
+
+.team-game-content .title-little{
+    font-size: 14px;
+    color: #3d4c71;
+    display: block;
+    font-weight: 900;
+    text-align: center;
+}
+.national-game-content .img1{
+    width: 875px;
+    height: 195px;
+    margin-top: 30px;
+    margin-bottom:20px;
+    background-image: url('/content/images/rule/national_1.png');
+    background-repeat: no-repeat;
+}
+.national-game-content .img2{
+    width: 310px;
+    height: 445px;
+    margin-top: 30px;
+    /*margin-bottom:40px;*/
+    background-image: url('/content/images/rule/national_2.png');
+    background-repeat: no-repeat;
+}
+.global-game-content .img1{
+    width: 665px;
+    height: 444px;
+    margin-top: 30px;
+    margin-bottom:20px;
+    background-image: url('/content/images/rule/global_1.png');
+    background-repeat: no-repeat;
+}
+.global-game-content .img2{
+    width: 92px;
+    height: 127px;
+    margin-top: 30px;
+    /*margin-bottom:40px;*/
+    background-image: url('/content/images/rule/global_3.png');
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+/*三角形*/
+.triangle{
+    display: inherit;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid red;
+    border-bottom: 5px solid transparent;
+}
+
+.rule-content{
+    width: 1002px;
+    margin: 0 auto;
+}
+.rule-show{
+    display: none;
+}
+/*.game-system-item.to-right-n{*/
+    /*margin-bottom: 65px;*/
+/*}*/
+

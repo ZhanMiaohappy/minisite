@@ -1,0 +1,89 @@
+<div class="home-wrap">
+    <div class="xiaomi-home" id="content">
+        <a ui-sref="join"  ng-if="!vm.isClick" class="signUp"></a>
+        <a ui-sref="competingInfo"  ng-if="vm.isClick" class="signUp"></a>
+    </div>
+    <home-menu class="index-home-menu"></home-menu>
+    <div class="xiaomi-articles">
+        <div class="xiaomi-articles-content">
+            <img src="/content/images/home/home-news.png" alt="">
+            <div class="xiaomi-articles-content-left" ng-style="{'background-image': 'url(/content/images/home/article-left.png)'}">
+                <a ng-href="http://b.g.mi.com/article/4"></a>
+            </div>
+            <div class="xiaomi-articles-content-right" ng-style="{'background-image': 'url(/content/images/home/article-right.png)'}">
+                <a ng-href="http://b.g.mi.com/article/7"></a>
+            </div>
+            <div class="xiaomi-articles-title clearfix">
+                <div class="ch-articles-item" ng-repeat="article in vm.articles">
+                    <a ng-href="/article/{{article.id}}">{{article.title}}
+                        <span class="ch-news-item-date">{{article.createDate | date:'MM/dd'}}</span>
+                    </a>
+                </div>
+            </div>signUp
+        </div>
+    </div>
+    <div class="xiaomi-bracket">
+        <div class="xiaomi-bracket-content">
+            <img src="/content/images/home/home-bracket.png" alt="">
+            <div class="xiaomi-bracket-content-schedule clearfix">
+                <button ng-class="{'color':vm.toOneseasonColor}" class="xiaomi-bracket-content-group" ng-click="vm.toLostOne('bo1-A')"> &nbsp;</button>
+                <button ng-class="{'color':vm.toThreeseasonColor}" class="xiaomi-bracket-content-finals"  ng-style="{'cursor':'not-allowed'}">总决赛</button>
+                <!--ng-click="vm.toLostTwo('bo3-A')"-->
+                <!--<button ng-class="{'color':vm.toFinalseasonColor}" class="ch-news-sch-item" ng-click="vm.toFinal('final')">全国总决赛</button>-->
+                <!--<button ng-class="{'color':vm.toFinalGlobalColor}" class="ch-news-sch-item" ng-click="vm.toFinalGlobal('final')">总决赛</button>-->
+                <div class="xiaomi-bracket-content-one" ng-show="vm.toOneShow">
+                    <button  ng-repeat="group in vm.groupList" ng-class="{active: vm.currentBracketTag === 'bo1-'+ group.number }" class="xiaomi-bracket-content-one-item"
+                             ng-click="vm.selectBracketTag('bo1-'+group.number)">{{group.number}}组</button>
+                    <!--<button ng-class="{active: vm.currentBracketTag === 'bo1-A'}" class="xiaomi-bracket-content-one-item" ng-click="vm.selectBracketTag('bo1-A')">A组</button>-->
+                </div>
+                <div class="xiaomi-bracket-content-two" ng-show="vm.toThreeShow" style="text-align: left;">
+                    <button ng-class="{'active':vm.currentFinalTag === 'bo3-A'}" class="ch-news-sch-one-item" ng-click="vm.selectFinalTag('bo3-A')">A组</button>
+                    <button ng-class="{'active':vm.currentFinalTag === 'bo3-B'}" class="ch-news-sch-one-item" ng-click="vm.selectFinalTag('bo3-B')">B组</button>
+                </div>
+                <div class="ch-news-sch-item-one-three" ng-show="vm.toFinalShow" style="text-align: left;"></div>
+                <div class="xiaomi-bracket-content-item-two">
+                    <image ng-src=""></image>
+                     首页对阵图
+                     <div ng-if="vm.toOneShow" class="home-bracket-wrap-new" ng-switch="vm.currentBracketTag" style="overflow: hidden;">
+                         <img class="home-picture" ng-src="{{vm.pictureUrl}}" alt="">  <!--在switch被调用之前使用ng-switch-default设置默认值 -->
+                     </div>
+                     <div ng-if="vm.toThreeseasonColor && vm.toThreeShow" class="home-bracket-wrap-new" ng-switch="vm.currentBracketTag" style="overflow: hidden;">
+                         <img class="home-picture" ng-src="{{vm.pictureUrl}}" alt="">
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="xiaomi-video">
+        <div class="xiaomi-video-content">
+            <img src="/content/images/home/home-video.png" alt="">
+            <div class="xiaomi-video-index-group">
+                <div class="xiaomi-video-index-item-div" ng-repeat="video in vm.videoAll">
+                    <a ui-sref="video-page({id: {{video.id}}})" class="video-item"  style="background-image: url({{video.thumbnailUrl?video.thumbnailUrl:'content/images/video/video-bg.jpg'}})">
+                        <!--<span class="sub-des">{{video.name}}</span>-->
+                        <div></div>
+                        <img src="/content/images/video/threeicon1.png">
+                        <img src="/content/images/home/play.png">
+                    </a>
+                    <p>{{video.name.slice(0,45) + (video.name.length>45 ? '...' : '')}}<span>{{video.createDate | date:'MM月dd日'}}</span></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="xiaomi-media">
+        <div class="xiaomi-media-content">
+            <img src="/content/images/home/home-partner.png" alt="">
+        </div>
+        <div class="xiaomi-media-content-img">
+            <img src="/content/images/home/xiaomi.png" alt="">
+            <img src="/content/images/home/1m.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

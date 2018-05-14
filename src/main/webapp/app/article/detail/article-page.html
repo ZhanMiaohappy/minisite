@@ -1,0 +1,22 @@
+<div class="csgo-article-wrap" ng-cloak="">
+    <home-menu></home-menu>
+    <div ng-cloak="" class="article-page">
+        <div class="np-title">{{vm.title}}</div>
+        <div class="np-create-date">&nbsp;发布时间：{{vm.createDate | date:'yyyy/MM/dd'}}</div>
+        <div class="np-article" ng-bind-html="vm.content"></div>
+        <div class="line-part1 line-part clearfix">
+            <span class="common1">评论</span><span class="common2">共{{vm.article.commentNumber || 0}}条评论</span>
+        </div>
+        <reply-text-box-for-news ng-if="vm.article" level="1" article-id="vm.article.id"></reply-text-box-for-news>
+        <div class="">
+            <div class="line-part2 line-part">
+                <span>全部评论</span>
+                <hr>
+            </div>
+            <news-reply-item ng-if="vm.article" article-id="vm.article.id" ng-repeat="comment in vm.commentAll" comment="comment"></news-reply-item>
+        </div>
+        <div class="forums-page-selection">
+            <news-page-num total-pages="vm.totalPages" to-page="vm.toPage(page)"></news-page-num>
+        </div>
+    </div>
+</div>

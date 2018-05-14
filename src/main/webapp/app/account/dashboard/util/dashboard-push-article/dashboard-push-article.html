@@ -1,0 +1,48 @@
+<div class="content-wraper">
+    <h1 class="header-title">所有图片</h1>
+    <div class="goPages-article">
+        <button class="prev-page btn  btn-success" ng-click="vm.loadPage(vm.page-1)" ng-disabled="vm.page < 2">
+            <span class="screen-reader-text">上一页</span><span aria-hidden="true">&lt;</span>
+        </button>
+        <form class="form-inline postArticle-form">
+            <div  class="form-group">
+                <div class="input-group prev-page">
+                    <div class="input-group-addon">第</div>
+                    <input class="current-page" ng-keyup="$event.keyCode == 13 && vm.loadPage(vm.page)" type="number"
+                           min="1" max="{{vm.totalPages}}" ng-model="vm.page" ng-style="{'width':'157px'}" aria-describedby="table-paging">
+                    <div class="input-group-addon">页</div>
+                </div>
+            </div>
+        </form>
+        <button class="prev-page btn  btn-success" ng-click="vm.loadPage(vm.page+1)" ng-disabled="vm.page >= vm.totalPages">
+            <span class="screen-reader-text">下一页</span><span aria-hidden="true">&gt;</span>
+        </button>
+    </div>
+    <table class="jh-table table">
+        <thead>
+        <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()" class="ng-isolate-scope">
+            <th jh-sort-by="id"><span class="ng-scope">ID</span> <span
+                class="glyphicon glyphicon-sort"></span></th>
+            <th jh-sort-by="name"><span class="ng-scope">url</span> <span
+                class="glyphicon glyphicon-sort"></span></th>
+            <th jh-sort-by="createDate"><span class="ng-scope">tag</span>
+                <span class="glyphicon glyphicon-sort"></span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="picture in vm.picture | orderBy:vm.predicate:(vm.reverse?'desc':'')" class="ng-scope">
+            <td>{{picture.id}}</td>
+            <td>{{picture.url}}</td>
+            <td>{{picture.tag}}</td>
+            <td class="text-right">
+                <div class="btn-group flex-btn-group-container">
+                    <button type="submit" ng-click="vm.confirmDelete(picture.id)" class="btn btn-danger btn-sm">
+                        <span class="glyphicon glyphicon-remove-circle"></span>
+                        <span class="hidden-xs hidden-sm ng-scope" data-translate="entity.action.delete">删除</span>
+                    </button>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

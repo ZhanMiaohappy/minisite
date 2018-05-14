@@ -1,0 +1,44 @@
+<div class="home-menu-wrap">
+    <div class="home-menu">
+        <div class="home-menu-nav">
+                <a ui-sref="home" ng-class="{'home-menu-a-active':vm.activeItem == 'home'}">
+                    <div>
+                        首页<br/>
+                        <span ng-class="{'home-menu-nav-active':vm.activeItem == 'home'}">HOME</span>
+                    </div>
+                </a>
+
+            <a ui-sref="rule"  ng-class="{'home-menu-a-active':vm.activeItem == 'rule'}">
+                <div>
+                    规则<br/>
+                    <span ng-class="{'home-menu-nav-active':vm.activeItem == 'rule'}">RULE</span>
+                </div>
+            </a>
+
+            <a ui-sref="article-list" ng-class="{'home-menu-a-active':vm.activeItem == 'article-list'}">
+                <div>
+                    新闻<br/>
+                    <span ng-class="{'home-menu-nav-active':vm.activeItem == 'article-list' || vm.activeItem == 'article-page'}">NEWS</span>
+                </div>
+            </a>
+            <a ui-sref="video-list" ng-class="{'home-menu-a-active':vm.activeItem == 'video-list'}">
+                <div>
+                    视频<br/>
+                    <span ng-class="{'home-menu-nav-active':vm.activeItem == 'video-list' || vm.activeItem == 'video-page'}">VIDEO</span>
+                </div>
+            </a>
+            <a ui-sref="join" ng-if="!vm.isClick" ng-class="{'home-menu-a-active':vm.activeItem == 'join'}">
+                <div>
+                    报名<br/>
+                    <span ng-class="{'home-menu-nav-active':vm.activeItem == 'join'}">JOIN</span>
+                </div>
+            </a>
+            <a ui-sref="competingInfo" ng-if="vm.isClick">
+                <div>
+                    报名<br/>
+                    <span ng-class="{'home-menu-nav-active':vm.activeItem == 'join'}">JOIN</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

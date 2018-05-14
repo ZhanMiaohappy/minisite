@@ -1,0 +1,52 @@
+<div class="post-wraper">
+    <h1 class="header-title">{{vm.article.id == null ?'撰写新文章':'修改文章'}}</h1>
+
+    <form class="form-inline postArticle-form">
+
+
+
+        <div class="col-md-8 edit-wraper">
+
+
+
+            <div class="vp-cr-v-pic">
+                <h4 class="upload-p">上传缩略图:</h4>
+                <div class="vp-cr-v-pic-upload">
+                    <a ng-click="vm.upload()" class="upbtn" ng-hide="vm.article.thumbnailUrl != ''">
+                        <div class="btn-vp-v-upload">
+                            <i>+</i>
+                        </div>
+                    </a>
+                    <img ng-show="vm.article.thumbnailUrl != ''" src="{{vm.article.thumbnailUrl}}">
+                    <p>{{vm.thumbnailUploadStatus}}</p>
+                </div>
+
+
+
+            </div>
+            <div class="ncontent">
+                <!--<h4>新闻内容：</h4>-->
+                <div class="content-editor" ng-show="vm.note.isEditShow">
+                    <input id="title-input" type="text" placeholder="请输入新闻标题" class="form-control title-input" ng-model="vm.article.title" ng-change="vm.wm()">
+                        <!--剩余可输入：{{60-(vm.article.title | gblen)}}-->
+
+                    <input type="text" class="form-control input-introduce" placeholder="请输入文章简介" ng-model="vm.article.introduction" >
+                    <text-angular
+                        ta-toolbar="[['h1','h2','h3','bold', 'italics', 'underline','strikeThrough', 'insertImage', 'insertLink', 'ul', 'ol', 'redo', 'undo', 'clear']]"
+                        ta-text-editor-class="form-content" ng-model="vm.article.content"
+                        id="tournament-editor-text"></text-angular>
+                </div>
+                <div class="content-viewer" ng-show="vm.note.isHtmlShow"
+                     ng-bind-html="vm.article.content">
+                </div>
+                <div class="content-editor-btn">
+                        <span>
+                            <button class="btn orange-button vp-btn-cr-art" ng-show="vm.note.isConfirmEditButtonShow"
+                                    ng-click="vm.confirmEdit()"
+                                    ng-disabled="(vm.article.title | gblen) > 60">提交</button>
+                        </span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

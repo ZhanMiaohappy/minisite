@@ -1,0 +1,29 @@
+<div ng-cloak>
+    <home-menu class="video-home-menu"></home-menu>
+    <div class="video-content clearfix">
+            <div class="video-group col-xs-12 clearfix">
+                <div class="real-video-content-title">
+                    <i></i>
+                </div>
+                <div class="video-item-div col-xs-6 col-lg-3" ng-repeat="video in vm.videoAll">
+                    <a ui-sref="video-page({id: {{video.id}}})" class="video-item"  style="background-image: url({{video.thumbnailUrl?video.thumbnailUrl:'content/images/video/video-bg.jpg'}})">
+                        <!--<span class="sub-des">{{video.name}}</span>-->
+                        <div class="video-white hidden-xs visible-sm visible-md visible-lg"></div>
+                        <div class="video-icon hidden-xs visible-sm visible-md visible-lg">
+                            <img src="/content/images/video/threeicon1.png" class="">
+                            <img src="/content/images/home/play.png" class="">
+                        </div>
+
+                    </a>
+                    <p>{{video.name.slice(0,40) + (video.name.length>40 ? '...' : '')}}<span class="hidden-xs visible-lg">{{video.createDate | date:'MM月dd日'}}</span></p>
+
+                </div>
+            </div>
+
+            <!--<div class="forums-page-selection">-->
+                <!--<button class="forums-next-page-btn" type="button" ng-click="vm.lastPage()" ng-disabled="vm.isFirst">&lt;上一页</button>&nbsp;&nbsp;-->
+                <!--<span>{{vm.page}}</span>&nbsp;&nbsp;-->
+                <!--<button class="forums-next-page-btn" type="button" ng-click="vm.nextPage()" ng-disabled="vm.isLast">下一页&gt;</button>-->
+            <!--</div>-->
+        </div>
+</div>

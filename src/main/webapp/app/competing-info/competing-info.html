@@ -1,0 +1,204 @@
+<div ng-cloak>
+    <div>
+        <home-menu class="join-home-menu"></home-menu>
+        <div class="team-register-wrap">
+            <div class="team-register" ng-if="vm.isLogIn">
+                <div class="join-content-title">
+                    <i></i>
+                </div>
+                <div class="team-register-captain">
+                    <div class="team-register-team-name">
+                        <div class="team-register-team-title">
+                            <i></i>小信息
+                        </div>
+                        <div class="team-register-team-content" ng-init="vm.teamNameIsValue = true">
+                            小队名称
+                            <input class="team-register-input"
+                                   type="text"
+                                   ng-disabled="vm.disabled"
+                                   ng-blur="vm.teamNameIsValue = vm.captain.teamName"
+                                   placeholder="请输入小队名称"
+                                   ng-model="vm.captain.teamName">
+                            <div class="team-register-captain-warn">
+                                <div ng-show="vm.teamNameIsValue === ''">不能为空</div>
+                            </div>
+                        </div>
+                        <div class="team-register-team-content" ng-init="vm.schoolIsValue = true">
+                            学校名称
+                            <input class="team-register-input"
+                                   type="text"
+                                   ng-disabled="vm.disabled"
+                                   ng-blur="vm.schoolIsValue = vm.captain.school"
+                                   placeholder="请输入学校名称"
+                                   ng-model="vm.captain.school">
+                            <div class="team-register-captain-warn">
+                                <div ng-show="vm.schoolIsValue === ''">不能为空</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-register-name" ng-init="vm.captainNameIsValue = true">
+                        <div class="team-register-team-title">
+                            <i></i>队长信息
+                        </div>
+                        <div class="team-register-team-content">
+                            姓名
+                            <input class="team-register-input"
+                                   type="text"
+                                   ng-disabled="vm.disabled"
+                                   ng-blur="vm.captainNameIsValue = vm.captain.name"
+                                   placeholder="请输入队长姓名"
+                                   ng-model="vm.captain.name">
+                            <div class="team-register-captain-warn">
+                                <div ng-show="vm.captainNameIsValue ===''">不能为空</div>
+                            </div>
+                        </div>
+                        <div class="team-register-member-phone team-register-member-name clearfloat" ng-init="vm.captainPhoneIsValue = true">
+                            手机号
+                            <input class="member-input"
+                                   type="text"
+                                   ng-disabled="vm.disabled"
+                                   placeholder="请输入手机号码"
+                                   ng-blur="vm.captainPhoneIsValue = vm.captain.phone"
+                                   ng-pattern="/^1[3456789]\d{9}$/"
+                                   ng-model="vm.captain.phone">
+                            <div class="team-register-member-warn">
+                                <div ng-show="vm.captainPhoneIsValue === ''">不能为空</div>
+                                <div ng-show="vm.captainPhoneIsValue === undefined">请输入正确格式</div>
+                            </div>
+                        </div>
+                        <div class="team-register-ID" ng-init="vm.captainIDIsValue = true">
+                            <div class="team-register-team-content">
+                                身份证号
+                                <input class="team-register-input"
+                                       type="text"
+                                       ng-disabled="vm.disabled"
+                                       placeholder="请输入身份证号码"
+                                       ng-blur="vm.captainIDIsValue = vm.captain.ID"
+                                       ng-pattern="/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/"
+                                       ng-model="vm.captain.ID">
+                                <div class="team-register-captain-warn">
+                                    <div ng-show="vm.captainIDIsValue === ''">不能为空</div>
+                                    <div ng-show="vm.captainIDIsValue === undefined">请输入正确格式</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-register-account" ng-init="vm.captainSchoolIdIsValue = true">
+                            <div class="team-register-team-content">
+                                学号
+                                <input class="team-register-input"
+                                       type="text"
+                                       ng-disabled="vm.disabled"
+                                       placeholder="请输入学号"
+                                       ng-blur="vm.captainSchoolIdIsValue = vm.captain.schoolId"
+                                       ng-model="vm.captain.schoolId">
+                                <div class="team-register-captain-warn">
+                                    <div ng-show="vm.captainSchoolIdIsValue === ''">不能为空</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-register-account" ng-init="vm.captainMiIDIsValue = true">
+                            <div class="team-register-team-content">
+                                账号信息
+                                <input class="team-register-input"
+                                       type="text"
+                                       ng-disabled="vm.disabled"
+                                       placeholder="请输入小米超神游戏ID"
+                                       ng-blur="vm.captainMiIDIsValue = vm.captain.miID"
+                                       ng-model="vm.captain.miID">
+                                <div class="team-register-captain-warn">
+                                    <div ng-show="vm.captainMiIDIsValue === ''">不能为空</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-register-member clearfloat">
+                    <div class="team-register-team-title">
+                        <i></i>队员信息
+                    </div>
+                    <div class="team-register-member-info">
+
+                        <div class="team-register-member-title" ng-class="{'team-register-member-title-color':vm.memberNameColor === '队员'+member.id}"
+                             ng-click="vm.selectMember('队员' + member.id,member.id)" ng-repeat="member in vm.member">
+                            <img ng-src="{{member.src}}" alt="" class="team-register-member-info-span">
+                            <!--<span class="team-register-member-info-span"></span>-->
+                            <br>
+                            {{'队员'+member.id}}
+                        </div>
+                        <div ng-repeat="member in vm.member" ng-show="vm.info === member.id">
+                            <div class="team-register-member-name clearfloat" ng-init="vm.nameIsvalue = true">
+                                姓名
+                                <input class="member-input"
+                                       type="text"
+                                       ng-disabled="vm.disabled"
+                                       placeholder="请输入姓名"
+                                       ng-blur="vm.nameIsvalue = vm.member[$index].name"
+                                       ng-model="vm.member[$index].name">
+                                <div class="team-register-member-warn">
+                                    <div ng-show="vm.nameIsvalue === ''" >不能为空</div>
+                                </div>
+                            </div>
+                            <div class="team-register-member-phone team-register-member-name clearfloat" ng-init="vm.phoneIsValue = true">
+                                手机号
+                                <input class="member-input"
+                                       type="text"
+                                       ng-disabled="vm.disabled"
+                                       placeholder="请输入手机号码"
+                                       ng-blur="vm.phoneIsValue = vm.member[$index].phone"
+                                       ng-pattern="/^1[3456789]\d{9}$/"
+                                       ng-model="vm.member[$index].phone">
+                                <div class="team-register-member-warn">
+                                    <div ng-show="vm.phoneIsValue === ''">不能为空</div>
+                                    <div ng-show="vm.phoneIsValue === undefined">请输入正确格式</div>
+                                </div>
+                            </div>
+                            <div class="team-register-member-ID team-register-member-name clearfloat" ng-init="vm.IDIsValue = true">
+                                身份证
+                                <input class="member-input"
+                                       type="text"
+                                       ng-disabled="vm.disabled"
+                                       placeholder="请输入身份证号码"
+                                       ng-blur="vm.IDIsValue = vm.member[$index].ID"
+                                       ng-pattern="/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/"
+                                       ng-model="vm.member[$index].ID">
+                                <div class="team-register-member-warn">
+                                    <div ng-show="vm.IDIsValue === ''">不能为空</div>
+                                    <div ng-show="vm.IDIsValue === undefined">请输入正确格式</div>
+                                </div>
+                            </div>
+                            <div class="team-register-member-name team-register-member-name clearfloat" ng-init="vm.schoolIdIsValue = true">
+                                学号
+                                <input class="member-input"
+                                       type="text"
+                                       ng-disabled="vm.disabled"
+                                       placeholder="请输入学号"
+                                       ng-blur="vm.schoolIdIsValue = vm.member[$index].schoolId"
+                                       ng-model="vm.member[$index].schoolId">
+                                <div class="team-register-member-warn">
+                                    <div  ng-show="vm.schoolIdIsValue === ''">不能为空</div>
+                                </div>
+                            </div>
+                            <div class="team-register-member-name team-register-member-name clearfloat" ng-init="vm.miIDIsValue = true">
+                                账号信息
+                                <input class="member-input"
+                                       type="text"
+                                       ng-disabled="vm.disabled"
+                                       placeholder="请输入小米超神游戏ID"
+                                       ng-blur="vm.miIDIsValue = vm.member[$index].miID"
+                                       ng-model="vm.member[$index].miID">
+                                <div class="team-register-member-warn">
+                                    <div ng-show="vm.miIDIsValue === ''">不能为空</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="team-register-btn"  ng-click="vm.submit()">修改</button>
+                <div class="team-register-warn" ng-show="vm.warn">
+                    请填写正确个人信息
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

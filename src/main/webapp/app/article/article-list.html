@@ -1,0 +1,37 @@
+<div class="article" ng-cloak="">
+    <div class="homepage">
+        <home-menu class="article-home-menu"></home-menu>
+        <div class="real-article">
+            <!--<div class="container">-->
+                <div class="real-article-content col-xs-12">
+                    <div class="real-article-content-title">
+                        <i></i>
+                    </div>
+                    <div class="extra-article-content">
+                        <ul class="nav">
+                            <li ng-repeat="article in vm.articles" class="col-xs-12">
+                                <a ui-sref="article-page({id:article.id})">
+                                    <div class="article-face-pic col-lg-4 col-xs-6">
+                                        <div class="img-left">
+                                            <div class="article-image-piece" style="background-image: url('{{article.thumbnailUrl.length > 5 ? article.thumbnailUrl:'/content/images/news/news-list-img2.jpg'}}')"></div>
+                                        </div>
+                                    </div>
+                                    <div class="title clearfix col-lg-8 col-xs-6">
+                                        <div class="title-text">{{ article.title }}</div>
+                                        <div class="title-picture title-time hidden-xs visible-sm visible-md visible-lg">发布日期：{{ article.createDate| date:'yyyy/MM/dd' }}<span class="u-font u-font-hs"></span></div>
+                                        <div class="title-picture visible-xs hidden-sm hidden-md hidden-lg">{{ article.createDate| date:'yyyy/MM/dd' }}<span class="u-font u-font-hs"></span></div>
+                                        <br>
+                                        <p ng-style="{'word-break':'break-all'}" class="des col-lg-12 hidden-xs visible-sm visible-md visible-lg" ng-bind-html="article.introduction"></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="clearfix"></li>
+                        </ul>
+                        <news-page-num ng-show="vm.totalPages > 1" total-pages="vm.totalPages"
+                                       to-page="vm.loadPage(page)"></news-page-num>
+                    </div>
+                </div>
+            <!--</div>-->
+        </div>
+    </div>
+</div>
