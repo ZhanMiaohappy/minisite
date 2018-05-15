@@ -22,7 +22,7 @@
         vm.activeItem = $state.$current.name;
         // console.log(vm.activeItem);
 
-        if ($state.current.url === '/main') {
+        if ($state.current.url==='/main') {
             angular.element(window).scroll(function () {
                 if (angular.element(window).scrollTop() >= 608) {
                     angular.element('.scroll-navbar')
