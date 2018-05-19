@@ -10,7 +10,7 @@
     function stateConfig($stateProvider) {
         $stateProvider.state('article-list', {
             parent: 'app',
-            url: '/articles',
+            url: '/articles',    //后面输入url就可以访问
             data: {
                 authorities: []
             },

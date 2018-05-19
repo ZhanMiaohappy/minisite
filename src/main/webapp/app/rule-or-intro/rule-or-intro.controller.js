@@ -6,7 +6,6 @@
     RuleOrIntroController.$inject = [];
     function RuleOrIntroController() {
         $('[data-toggle="tooltip"]').tooltip();
-        console.log('rule');
         var vm = this;
         var Person = /** @class */ (function () {
             function Person(name, surname, email) {

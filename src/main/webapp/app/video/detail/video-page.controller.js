@@ -1,6 +1,3 @@
-/**
- * Created by DELL on 2017/3/13.
- */
 (function () {
     'use strict';
 

@@ -39,6 +39,12 @@
                     <span ng-class="{'home-menu-nav-active':vm.activeItem == 'join'}">JOIN</span>
                 </div>
             </a>
+            <a ui-sref="game-list" ng-class="{'home-menu-a-active':vm.activeItem == 'game-list'}">
+                <div>
+                    比赛<br/>
+                    <span ng-class="{'home-menu-nav-active':vm.activeItem == 'game-list' || vm.activeItem == 'game-page'}">GAME</span>
+                </div>
+            </a>
         </div>
     </div>
 </div>

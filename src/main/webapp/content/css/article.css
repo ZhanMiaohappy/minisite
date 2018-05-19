@@ -253,7 +253,7 @@ body{
 
 /*csgo的新闻样式*/
 .csgo-article-wrap {
-    background-image: url(/content/images/article/article-page-bg.jpg);
+    background-image: url(/content/images/article/article-page-bg.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-color: #101018;

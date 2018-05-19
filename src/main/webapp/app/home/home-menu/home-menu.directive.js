@@ -1,6 +1,3 @@
-/**
- * Created by arslan on 1/31/17.
- */
 angular
     .module('bsbmsoneApp')
     .directive('homeMenu', homeMenu);

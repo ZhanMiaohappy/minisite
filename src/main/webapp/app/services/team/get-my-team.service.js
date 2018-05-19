@@ -1,6 +1,3 @@
-/**
- * Created by rhd on 2017/8/19.
- */
 (function() {
     'use strict';
 

@@ -17,7 +17,7 @@
         vm.login = login;
 
         GetArticleById.get({id: articleId},{}, function onSuccess(data) {
-            //console.log(data);
+            // console.log(data);
             vm.article = data;
             vm.title = data.title;
             vm.createDate = data.createDate.toLocaleString();
